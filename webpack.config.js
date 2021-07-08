@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   output: {
-    publicPath: argv.mode === 'development' ?  "http://localhost:8081/" : 'https://prod-test-consumer-opal.vercel.app/',
+    publicPath: argv.mode === 'development' ?  "http://localhost:8081/" : 'https://prod-test-consumer-lemon.vercel.app/',
   },
 
   resolve: {
